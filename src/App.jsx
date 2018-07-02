@@ -8,12 +8,12 @@ const cities = ["newyork", "london", "berlin", "beijing", "mexicocity"];
 
 const FourOhFour = () => (
   <div className="centerArea " style={{ color: "white" }}>
-    <h1>404</h1> <h1>1Oops... Page Not Found!</h1>
+    <h1>404</h1> <h1>2Oops... Page Not Found!</h1>
   </div>
 );
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div>
       <Switch>
         <Route exact path="/" component={Landing} />
