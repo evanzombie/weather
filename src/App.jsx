@@ -13,7 +13,7 @@ const FourOhFour = () => (
 );
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div>
       <Switch>
         <Route exact path="/" component={Landing} />
