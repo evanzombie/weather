@@ -17,7 +17,6 @@ const App = () => (
     <div>
       <Switch>
         <Route exact path="/" component={Landing} />
-        {/*<Route path="/details/:city" component={() => <Detail />}  />*/}
         <Route
           path="/details/:city"
           component={({ match }) => {

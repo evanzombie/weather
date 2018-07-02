@@ -131,7 +131,7 @@ export default class Detail extends Component {
 	};
 	fetchForecast = () => {
 		fetch(
-			`http://api.openweathermap.org/data/2.5/forecast?id=${
+			`https://api.openweathermap.org/data/2.5/forecast?id=${
 				cities.hasOwnProperty(this.props.city) ? this.getCityID() : ""
 			}&appid=185be8b935f0b6a165216ace7b3d09da&units=imperial&cnt=4`
 		)
@@ -162,7 +162,7 @@ export default class Detail extends Component {
 
 	fetchData = () => {
 		fetch(
-			`http://api.openweathermap.org/data/2.5/group?id=${
+			`https://api.openweathermap.org/data/2.5/group?id=${
 				cities.hasOwnProperty(this.props.city) ? this.getCityID() : ""
 			}
 			&appid=185be8b935f0b6a165216ace7b3d09da&units=imperial`

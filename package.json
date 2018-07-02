@@ -1,15 +1,17 @@
 {
   "name": "weather",
   "version": "0.1.0",
+  "description": "A weather app",
   "private": true,
+  "homepage": "https://evanzombie.github.io/weather",
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
     "babel-plugin-dynamic-import-webpack": "^1.0.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "express": "^4.16.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
     "styled-components": "^3.3.3",
     "webpack-dev-middleware": "^3.1.3",
     "webpack-hot-middleware": "^2.22.2"
@@ -20,19 +22,24 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "gh-pages": "^1.2.0",
     "html-webpack-plugin": "^3.2.0",
     "prettier": "^1.13.7",
     "react-hot-loader": "^4.3.3",
-    "webpack": "^4.13.0",
+    "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
+    "webpack-start": "webpack-dev-server --mode development --hot",
+    "dev": "webpack-dev-server --mode development",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "format":
+      "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"src/components/*.{js,jsx}\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }

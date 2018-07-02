@@ -58,7 +58,7 @@ class Landing extends Component {
 
 	fetchData() {
 		fetch(
-			"http://api.openweathermap.org/data/2.5/group?id=5128638,2643743,2950159,1816670,3530597&appid=185be8b935f0b6a165216ace7b3d09da&units=imperial"
+			"https://api.openweathermap.org/data/2.5/group?id=5128638,2643743,2950159,1816670,3530597&appid=185be8b935f0b6a165216ace7b3d09da&units=imperial"
 		)
 			.then(response => response.json())
 			.then(data =>
