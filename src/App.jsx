@@ -18,7 +18,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route
-          path="/details/:city"
+          path="/:city"
           component={({ match }) => {
             if (
               cities.find(city => {

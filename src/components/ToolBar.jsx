@@ -9,19 +9,19 @@ const ToolBar = () => (
         <Link to="/">Home</Link>
       </li>
       <li>
-        <a href="/details/beijing">Beijing</a>
+        <a href="/beijing">Beijing</a>
       </li>
       <li>
-        <a href="/details/berlin">Berlin</a>
+        <a href="/berlin">Berlin</a>
       </li>
       <li>
-        <a href="/details/london">London</a>
+        <a href="/london">London</a>
       </li>
       <li>
-        <a href="/details/mexicocity">Mexico City</a>
+        <a href="/mexicocity">Mexico City</a>
       </li>
       <li>
-        <a href="/details/newyork">New York</a>
+        <a href="/newyork">New York</a>
       </li>
     </ul>
   </div>

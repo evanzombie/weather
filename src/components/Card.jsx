@@ -2,10 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 const Card = props => (
-	<a
-		href={`/details/${props.city.toLowerCase().replace(/\s+/g, "")}`}
-		className={`cityCard ${props.cols} ${props.color}`}
-	>
+	<a href={`/${props.city.toLowerCase().replace(/\s+/g, "")}`} className={`cityCard ${props.cols} ${props.color}`}>
 		<span className={`iconSize ${props.icon}`} />
 
 		<div className="temp">{props.temp} &#8457;</div>
